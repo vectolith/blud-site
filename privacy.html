@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BLUD — Privacy</title>
+<meta name="description" content="How BLUD handles your messages, connected accounts and credentials.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+</head>
+<body><div class="wrap">
+<header><img class="mark" src="mark.svg" alt=""><span class="wordmark">BLUD</span></header>
+<h1>Privacy</h1>
+<p>Last updated 22 November 2026.</p>
+<h2>What we collect</h2>
+<ul>
+<li>Your phone number, used to identify your workspace and to reply to you.</li>
+<li>The messages you send to BLUD and the replies it sends, stored so the conversation has context.</li>
+<li>Access tokens for the accounts you connect (GitHub, Google Calendar, Gmail), stored encrypted.</li>
+<li>Operational logs of each run: what was asked, which tools ran, whether they succeeded.</li>
+</ul>
+<h2>Why</h2>
+<p>To answer your messages, to perform the tasks you ask for, and to keep a record you can inspect or delete. Nothing is used to train third-party models.</p>
+<h2>Who else sees it</h2>
+<ul>
+<li>The messaging provider that delivers iMessage, which necessarily sees message content in transit.</li>
+<li>The model provider that generates replies, which receives the conversation needed to answer.</li>
+<li>The providers whose accounts you connect, when a task requires a call to them.</li>
+</ul>
+<p>We do not sell data and we do not share it for advertising.</p>
+<h2>Storage and retention</h2>
+<p>Data is stored in a Postgres database and encrypted where it is a credential. You can ask for deletion at any time and the workspace, its messages and its stored credentials are removed.</p>
+<h2>Your controls</h2>
+<ul>
+<li>Disconnect an account at any time; the stored token is revoked.</li>
+<li>Request export or deletion by emailing <a href="mailto:ganiyusail101@gmail.com">ganiyusail101@gmail.com</a>.</li>
+<li>Stop messages by replying STOP, which ends delivery.</li>
+</ul>
+<h2>Contact</h2>
+<p><a href="mailto:ganiyusail101@gmail.com">ganiyusail101@gmail.com</a></p>
+<footer><nav><a href="index.html">Overview</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/vectolith/blud">Source</a></nav><p style="margin-top:14px">BLUD is built by Vectolith. Questions: <a href="mailto:ganiyusail101@gmail.com">ganiyusail101@gmail.com</a></p></footer></div></body></html>
